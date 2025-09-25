@@ -1,0 +1,16 @@
+ten1 = input("bạn tên gì?")
+namsinh1 = int(input("bạn sinh năm bao nhiêu?"))
+diem1 = float(input("bạn bao nhiêu điểm?"))
+
+if diem1 >=8.5:
+    xeploai = "xuất sắc"
+elif diem1 >=7.0:
+    xeploai = "khá"
+elif diem1 >=5.0:
+    xeploai = "trung bình"
+else:
+    xeploai = ("Đúp")
+print("kết quả đánh giá")
+print(ten1)
+print("điểm", diem1)
+print("xếp loại", xeploai)
