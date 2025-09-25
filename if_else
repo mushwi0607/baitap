@@ -1,0 +1,7 @@
+ten = input("bạn tên gì?")
+namsinh = int(input("bạn sinh năm bao nhiêu?"))
+diem = float(input("bạn được bao nhiêu điểm?"))
+if diem >=5:
+    print("bạn",ten,"đã đỗ")
+else:
+    print("bạn",ten,"không đỗ")
