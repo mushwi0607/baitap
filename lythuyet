@@ -1,0 +1,52 @@
+cấu trúc lặp for 2 
+hoa = (”khoa công nghê”, “khoa kỹ thuật”)
+print(”Trường đại học Công nNghệ - Đại học quốc gia Hà Nội là trường trọng điểm về công nghệ thông tin và kĩ thuật hàng đầu cả nước,trường có các khoa:”)
+for i in range(0,len(khoa), 1):
+print(”\t khoa”, khoa[i], “\n”)
+
+and - nếu đk 1 và đk 2,..đều thỏa mãn thì biểu thức True
+or -  chỉ cần 1 trog đk đúng thì kết quả là True
+cấu trúc rẽ nhánh khuyết (1 nhánh)
+cú pháp 
+if(đk):
+        lệnh khi đúng:
+cấu trúc rẽ nhánh if…else (rẽ 2 nhánh)
+cú pháp:
+if (đk):
+         lệnh khi đúng:
+else: 
+        lệnh khi sai:
+cấu trúc rẽ nhánh if…elif…else (rẽ nhiều nhánh)
+if (dk1):
+           lệnh khi đúng 1:
+elif (dk2)
+           lệnh khi đúng 2:
+           …..
+elif (dk n):
+           lệnh khi đúng n:
+else: 
+           lệnh khi sai:
+cấu trúc lặp while
+cú pháp
+while (dk):
+              lệnh lặp:
+ví dụ: sơ đồ hoạt động
+ten = input(”bạn tên gì?”)
+namsinh = int(input(”bạn sinh năm bao nhiêu?”))
+diem = float(input(”điểm của bạn?”))
+while diem < 0 or diem > 10:
+         diem = float(input(”điểm phải nằm trong khoảng từ 0 đến 10. Hãy nhập lại: “))
+#print a notification
+if diem ≥= 5:
+   print(”bạn”, ten,”đã đỗ”)
+else:
+print(”bạn”, ten,” ko đỗ”)
+cấu trúc lặp for
+cú pháp lệnh:
+for <mục> in <list>
+       lệnh lặp;
+ví dụ:
+khoa=[”khoa kỹ thuật”,”khoa công nghệ thông tin”,”khoa vật lí”]
+print(”trường đại học công nghệ - đại học quốc gia hà nội là trường trọng điểm, trường có các khoa: “)
+for i in khoa:
+print(”\t khoa”, i, “\n”)
