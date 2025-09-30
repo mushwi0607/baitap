@@ -1,0 +1,12 @@
+n=int(input("nhập vào 1 số tự nhiên"))
+i=2;
+ok=True;
+while i<n/2:
+    if n%1==0:
+        ok=False;
+        break
+    i+=1
+if ok:
+  print(n,"là 1 ố nguyên số")
+else:
+  print(n,"không là số nguyên tố")
