@@ -1,0 +1,11 @@
+
+so=0
+for so in range(10):
+    so=so+1
+    if so==5:
+        continue
+    print("số đc in ra:"+str(so))
+    print("hết vòng lặp")
+
+
+
