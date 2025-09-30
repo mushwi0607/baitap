@@ -1,0 +1,6 @@
+khoa=["Công nghệ thông tin","khoa học máy tính","kỹ thuật máy tính","..."]
+print("trường này có các khoa:")
+i=0
+while i<len(khoa):
+    print("\t", i+1," khoa", khoa[i], "\n")
+    i+=1
