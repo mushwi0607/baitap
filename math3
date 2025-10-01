@@ -1,0 +1,4 @@
+S = 0
+for i in range(1, 2004):
+    S += i * (i + 1)
+print("Tổng S(n) =", S)
