@@ -1,0 +1,11 @@
+import math
+x = int(input("Nhập giá trị x: "))
+n = int(input("Nhập giá trị n: "))
+s = 0
+i = 0
+while True:
+    s += math.pow(x, 2 * i + 1)
+    i += 1
+    if i > n:
+        break
+print("Tổng S(x,n) =", s)
