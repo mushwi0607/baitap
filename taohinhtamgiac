@@ -1,0 +1,11 @@
+import math
+a = float(input("Nhập cạnh a: "))
+b = float(input("Nhập cạnh b: "))
+c = float(input("Nhập cạnh c: "))
+if a > 0 and b > 0 and c > 0 and (a + b > c) and (a + c > b) and (b + c > a):
+    p = (a + b + c) / 2
+    S = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    print(f"\nBa cạnh ({a}, {b}, {c}) tạo thành một tam giác.")
+    print(f"Diện tích tam giác là: {S}")
+else:
+    print("Ba số vừa nhập KHÔNG tạo thành tam giác.")
