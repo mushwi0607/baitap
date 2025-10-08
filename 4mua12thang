@@ -1,0 +1,11 @@
+thang = int(input("Nhập tháng (1-12): "))
+if thang in [2, 3, 4]:
+    print("Tháng này thuộc mùa Xuân.")
+elif thang in [5, 6, 7]:
+    print("Tháng này thuộc mùa Hè.")
+elif thang in [8, 9, 10]:
+    print("Tháng này thuộc mùa Thu.")
+elif thang in [11, 12, 1]:
+    print("Tháng này thuộc mùa Đông.")
+else:
+    print("Tháng không hợp lệ! Vui lòng nhập từ 1 đến 12.")
