@@ -1,0 +1,20 @@
+maSV = input("Nhập mã sinh viên: ")
+tenSV = input("Nhập tên sinh viên: ")
+RL = int(input("Nhập điểm rèn luyện: "))
+
+if RL >= 90:
+    hanh_kiem = "Xuất sắc"
+elif RL >= 80:
+    hanh_kiem = "Tốt"
+elif RL >= 65:
+    hanh_kiem = "Khá"
+elif RL >= 50:
+    hanh_kiem = "Trung bình"
+else:
+    hanh_kiem = "Yếu"
+
+print("\n--- KẾT QUẢ XÉT HẠNH KIỂM ---")
+print(f"Mã SV: {maSV}")
+print(f"Họ tên: {tenSV}")
+print(f"Điểm RL: {RL}")
+print(f"Hạnh kiểm: {hanh_kiem}")
