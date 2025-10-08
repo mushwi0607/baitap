@@ -1,0 +1,17 @@
+hoten = input("Nhập họ tên chủ hộ: ")
+chiso1 = int(input("Nhập chỉ số điện tháng trước: "))
+chiso2 = int(input("Nhập chỉ số điện tháng này: "))
+soKW = chiso2 - chiso1
+if soKW < 0:
+    print("Lỗi: Chỉ số điện tháng này không thể nhỏ hơn tháng trước.")
+else:
+    if soKW <= 60:
+        sotien = soKW * 5
+    elif soKW <= 160:
+        sotien = 60 * 5 + (soKW - 60) * 8
+    else:
+        sotien = 60 * 5 + 100 * 8 + (soKW - 160) * 10
+    print("\n----- HÓA ĐƠN TIỀN ĐIỆN -----")
+    print(f"Chủ hộ: {hoten}")
+    print(f"Số KW tiêu thụ: {soKW} KW")
+    print(f"Số tiền phải trả: {sotien} đồng")
