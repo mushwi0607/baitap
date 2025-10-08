@@ -1,1 +1,1 @@
-Locket dạng project
+1200 ngày làm IT student
