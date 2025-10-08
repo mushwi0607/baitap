@@ -1,0 +1,21 @@
+while True:
+    n = int(input("Nhập một số nguyên n: "))
+    if n < 0:
+        print("n phải là số dương, nhập lại!")
+    else:
+        break
+if n % 2 == 0:
+    tong = sum(i for i in range(1, n + 1) if i % 2 != 0)
+    print(f"Tổng các số lẻ từ 1 đến {n}: {tong}")
+else:
+    tong = sum(i for i in range(1, n + 1) if i % 2 == 0)
+    print(f"Tổng các số chẵn từ 1 đến {n}: {tong}")
+print(f"\nCác số không chia hết cho 3 từ 1 đến {n}:")
+for i in range(1, n + 1):
+    if i % 3 != 0:
+        print(i, end=" ")
+chuoi = str(n)
+so_chu_so = len(chuoi)
+tong_chu_so = sum(int(c) for c in chuoi)
+print(f"\n\nSố {n} có {so_chu_so} chữ số.")
+print(f"Tổng các chữ số của {n} là: {tong_chu_so}")
