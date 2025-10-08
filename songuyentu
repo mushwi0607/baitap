@@ -1,0 +1,14 @@
+N = int(input("Nhập số nguyên dương N: "))
+
+if N < 2:
+    print("Không có số nguyên tố nào.")
+else:
+    print(f"Các số nguyên tố từ 1 đến {N} là:")
+    for i in range(2, N + 1):
+        la_nguyen_to = True
+        for j in range(2, int(i**0.5) + 1):
+            if i % j == 0:
+                la_nguyen_to = False
+                break
+        if la_nguyen_to:
+            print(i, end=" ")
