@@ -1,0 +1,10 @@
+can = ["Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ"]
+chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"]
+
+y = int(input("Nhập năm (0 - 9999): "))
+
+if y < 0 or y > 9999:
+    print("Năm không hợp lệ!")
+else:
+    nam_can_chi = can[y % 10] + " " + chi[y % 12]
+    print(f"Năm {y} là năm {nam_can_chi}.")
