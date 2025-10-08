@@ -1,0 +1,12 @@
+a = float(input("Nhập chiều dài a: "))
+b = float(input("Nhập chiều rộng b: "))
+if a <= 0 or b <= 0:
+    print("Lỗi: Chiều dài và chiều rộng phải là số dương!")
+else:
+    chu_vi = 2 * (a + b)
+    dien_tich = a * b
+    print("\n--- KẾT QUẢ ---")
+    print(f"Chiều dài: {a}")
+    print(f"Chiều rộng: {b}")
+    print(f"Chu vi hình chữ nhật: {chu_vi}")
+    print(f"Diện tích hình chữ nhật: {dien_tich}")
