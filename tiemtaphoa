@@ -1,0 +1,44 @@
+# Chương trình quản lý hàng hóa cửa hàng Nam Tuyên
+
+# Nhập số lượng mặt hàng
+n = int(input("Nhập số lượng mặt hàng: "))
+
+# Danh sách lưu thông tin hàng hóa
+hang_hoa = []
+
+# Nhập thông tin từng mặt hàng
+for i in range(n):
+    print(f"\nNhập thông tin mặt hàng thứ {i+1}:")
+    ten = input("Tên hàng: ")
+    so_luong = int(input("Số lượng: "))
+    gia_ban = float(input("Giá bán: "))
+    
+    # Mỗi mặt hàng là một dict
+    mat_hang = {
+        "Tên hàng": ten,
+        "Số lượng": so_luong,
+        "Giá bán": gia_ban
+    }
+    hang_hoa.append(mat_hang)
+
+# Tính tổng số lượng hàng hóa
+tong_so_luong = sum(item["Số lượng"] for item in hang_hoa)
+
+# Hiển thị kết quả
+print("\n===== DANH SÁCH HÀNG HÓA =====")
+for item in hang_hoa:
+    print(f"Tên hàng: {item['Tên hàng']}, Số lượng: {item['Số lượng']}, Giá bán: {item['Giá bán']}")
+
+print("\nTổng số lượng hàng hóa trong cửa hàng:", tong_so_luong)
+
+# Các hàng có số lượng < 10
+print("\n===== HÀNG CÓ SỐ LƯỢNG < 10 =====")
+for item in hang_hoa:
+    if item["Số lượng"] < 10:
+        print(f"{item['Tên hàng']} - Số lượng: {item['Số lượng']} - Giá: {item['Giá bán']}")
+
+# Các hàng có số lượng > 50
+print("\n===== HÀNG CÓ SỐ LƯỢNG > 50 =====")
+for item in hang_hoa:
+    if item["Số lượng"] > 50:
+        print(f"{item['Tên hàng']} - Số lượng: {item['Số lượng']} - Giá: {item['Giá bán']}")
