@@ -1,0 +1,29 @@
+# Nhập số lượng phần tử n
+n = int(input("Nhập số lượng phần tử n: "))
+
+# Kiểm tra n có phải số dương không
+while n <= 0:
+    n = int(input("Vui lòng nhập lại n > 0: "))
+
+# Nhập danh sách các số thực
+L = []
+for i in range(n):
+    x = float(input(f"Nhập phần tử thứ {i+1}: "))
+    L.append(x)
+
+# Tìm phần tử lớn nhất trong danh sách
+max_value = max(L)
+
+# Sắp xếp danh sách tăng dần
+L.sort()
+
+# Đếm số phần tử dương và âm
+so_duong = sum(1 for x in L if x > 0)
+so_am = sum(1 for x in L if x < 0)
+
+# Hiển thị kết quả
+print("\n--- KẾT QUẢ ---")
+print("Danh sách sau khi sắp xếp tăng dần:", L)
+print("Phần tử lớn nhất trong danh sách:", max_value)
+print("Số phần tử dương:", so_duong)
+print("Số phần tử âm:", so_am)
