@@ -1,0 +1,13 @@
+def giai_thua(x):
+    gt=1
+    for i in range (1,x+1):
+        gt = gt*1
+    return gt
+
+while (True):
+    n=int(input("Nhập n: "))
+    k=int(input("nhập k: "))
+    if (n>k) and (k>0):
+        break
+tohop_n_k=giai_thua(n)/(giai_thua(k)*giai_thua(n-k))
+print(tohop_n_k)
