@@ -1,0 +1,10 @@
+def la_so_chinh_phuong(x):
+    return int(x**0.5)**2 == x
+
+def HT_SKCP(N):
+    for i in range(2, N+1):
+        if not la_so_chinh_phuong(i):
+            print(i, end=" ")
+
+N = int(input("Nhập N: "))
+HT_SKCP(N)
