@@ -1,0 +1,24 @@
+n = int(input("Nhập số lượng phần tử trong danh sách (1 < n < 1000): "))
+numbers = []
+for i in range(n):
+    num = int(input(f"Nhập phần tử thứ {i + 1}: "))
+    numbers.append(num)
+print("\nDanh sách vừa nhập là:", numbers)
+tong = sum(numbers)
+print("Tổng các phần tử trong danh sách là:", tong)
+tich = 1
+for num in numbers:
+    tich *= num
+print("Tích các phần tử trong danh sách là:", tich)
+x = int(input("\nNhập giá trị x cần kiểm tra: "))
+if x in numbers:
+    print(f"Có phần tử bằng {x} trong danh sách.")
+else:
+    print(f"Không có phần tử nào bằng {x} trong danh sách.")
+is_sorted = all(numbers[i] <= numbers[i+1] for i in range(len(numbers)-1))
+if is_sorted:
+    print("Các phần tử trong danh sách có thứ tự tăng dần.")
+else:
+    print("Các phần tử trong danh sách KHÔNG có thứ tự tăng dần.")
+trung_binh = tong / len(numbers)
+print("Trung bình cộng của các phần tử là:", trung_binh)
