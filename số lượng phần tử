@@ -1,0 +1,12 @@
+L = []
+N = int(input("Nhập số lượng phần tử: "))
+
+for i in range(N):
+    x = float(input(f"Nhập số thứ {i+1}: "))
+    L.append(x)
+
+print("Dãy số:", L)
+print("Giá trị lớn nhất:", max(L))
+print("Giá trị nhỏ nhất:", min(L))
+print("Tổng các phần tử:", sum(L))
+print("Giá trị trung bình:", sum(L)/len(L))
