@@ -1,0 +1,15 @@
+def trung_binh_cong(*diemThi):
+    tong = 0
+    so_luong = 0
+    for dt in diemThi:
+        if type(dt) == list:
+            tong += sum(dt)
+            so_luong += len(dt)
+        else:
+            tong += dt
+            so_luong += 1
+    if so_luong > 0:
+        return tong / so_luong
+    return 0
+ds = list(map(float, input("Nhập các điểm, cách nhau bởi khoảng trắng: ").split()))
+print("Điểm trung bình:", trung_binh_cong(ds))
