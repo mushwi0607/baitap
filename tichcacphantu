@@ -1,0 +1,8 @@
+def tich(L):
+    kq = 1
+    for x in L:
+        kq *= x
+    return kq
+
+ds = [1, 2, -8]
+print("Tích các phần tử:", tich(ds))
