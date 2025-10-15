@@ -1,0 +1,17 @@
+n = int(input("Nhập số lượng tài khoản trong lớp: "))
+ds_tk = []
+for i in range(n):
+    tk = input(f"Nhập tài khoản thứ {i+1}: ")
+    ds_tk.append(tk)
+print("\nDanh sách tài khoản của lớp:")
+for tk in ds_tk:
+    print(tk)
+if "TK131" in ds_tk:
+    print("\nTrong lớp có tài khoản TK131.")
+else:
+    print("\nTrong lớp KHÔNG có tài khoản TK131.")
+    if "tk131".lower() in [t.lower() for t in ds_tk]:
+        print("\nTrong lớp có tài khoản TK131 (không phân biệt chữ hoa chữ thường).")
+    else:
+        print("\nKhông có tài khoản TK131.")
+
