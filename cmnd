@@ -1,0 +1,21 @@
+scmt = input("Nhập số CMTND: ")
+
+if scmt.isdigit() and 9 <= len(scmt) <= 11:
+    print("Số CMTND hợp lệ.")
+else:
+    print("Số CMTND không hợp lệ.")
+se = input("Nhập địa chỉ email: ")
+
+if se.count('@') == 1:
+    parts = se.split('@')
+    x = parts[0]
+    if '.' in parts[1]:
+        y, z = parts[1].split('.', 1)  # chia thành 2 phần tại dấu chấm đầu tiên
+        if x != "" and y != "" and z != "":
+            print("Địa chỉ email hợp lệ.")
+        else:
+            print("Địa chỉ email không hợp lệ (phần rỗng).")
+    else:
+        print("Địa chỉ email không hợp lệ (thiếu dấu chấm).")
+else:
+    print("Địa chỉ email không hợp lệ (sai số lượng @).")
