@@ -1,0 +1,13 @@
+L = []
+n = int(input("Nhập số lượng phần tử: "))
+
+for i in range(n):
+    L.append(float(input(f"Số thứ {i+1}: ")))
+
+print("Danh sách ban đầu:", L)
+
+L.sort()
+print("Sắp xếp tăng dần:", L)
+
+L.sort(reverse=True)
+print("Sắp xếp giảm dần:", L)
