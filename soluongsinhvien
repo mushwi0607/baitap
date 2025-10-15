@@ -1,0 +1,11 @@
+ds_sv = []
+n = int(input("Nhập số lượng sinh viên: "))
+
+for i in range(n):
+    sv = input(f"Nhập họ tên sinh viên thứ {i+1}: ")
+    ds_sv.append(sv)
+
+print("\nSinh viên có tên 'Phương':")
+for sv in ds_sv:
+    if sv.lower().endswith(" phương"):
+        print(sv)
