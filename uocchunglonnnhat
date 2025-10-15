@@ -1,0 +1,9 @@
+def UCLN(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+x = int(input("Nhập số thứ nhất: "))
+y = int(input("Nhập số thứ hai: "))
+
+print("Ước chung lớn nhất là:", UCLN(x, y))
