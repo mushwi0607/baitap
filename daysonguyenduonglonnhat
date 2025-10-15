@@ -1,0 +1,15 @@
+L = []
+print("Nhập dãy số nguyên dương (nhập ký tự khác để dừng):")
+
+while True:
+    x = input()
+    if x.isdigit():
+        L.append(int(x))
+    else:
+        break
+
+if len(L) > 0:
+    print("Dãy số hợp lệ:", L)
+    print("Giá trị lớn nhất:", max(L))
+else:
+    print("Không có số hợp lệ nào được nhập.")
