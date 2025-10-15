@@ -1,0 +1,7 @@
+s = "Đại học Công Nghệ"
+st = input("Nhập xâu cần kiểm tra: ")
+
+if st in s:
+    print("Xâu s có chứa nội dung", st)
+else:
+    print("Xâu s KHÔNG chứa nội dung", st)
