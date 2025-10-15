@@ -1,0 +1,36 @@
+ds_lop = [
+    ["101181", 65, "2018-2022", "Trần Văn Minh"],
+    ["101185", 60, "2018-2022", "Nguyễn Thị Hoa"],
+    ["101190", 72, "2019-2023", "Lê Văn Long"]
+]
+print("Danh sách lớp hiện có:")
+for lop in ds_lop:
+    print(lop)
+lop_moi = ["101182", 70, "2018-2022", "Nguyễn Duy Tân"]
+ds_lop.append(lop_moi)
+print("\nSau khi thêm lớp mới:")
+for lop in ds_lop:
+    print(lop)
+x = input("\nNhập mã lớp cần tìm: ")
+tim_thay = False
+for lop in ds_lop:
+    if lop[0] == x:
+        print("Thông tin lớp tìm thấy:", lop)
+        tim_thay = True
+        break
+
+if not tim_thay:
+    print("Không tìm thấy lớp có mã", x)
+newInfo = input("\nNhập thông tin mới cho lớp 101185 (dạng: mã,sĩ số,khóa,giáo viên): ")
+newInfo = newInfo.split(",")
+
+for i in range(len(ds_lop)):
+    if ds_lop[i][0] == "101185":
+        ds_lop[i] = newInfo
+        print("Đã cập nhật thông tin lớp 101185.")
+        break
+else:
+    print("Không có lớp 101185 trong danh sách.")
+print("\nDanh sách lớp sau khi cập nhật:")
+for lop in ds_lop:
+    print(lop)
