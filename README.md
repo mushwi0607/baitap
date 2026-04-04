@@ -1,1 +1,1 @@
-1200 ngày làm IT student
+1200 ngày làm sinh viên IT
